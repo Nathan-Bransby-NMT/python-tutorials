@@ -35,7 +35,7 @@ print("Hello, {0}. You are {1} years old.".format(name, age))
 ```
 
 This method replaces the values in `{}` with variables placed in order.
-Although `.format()` improves readability, it's important to note that paceholders and variables must match with the correct position used.
+Although `.format()` improves readability, it's important to note that placeholders and variables must match with the correct position used.
 
 Using the example above but swapping variables or placeholders arround would return incorrectly.
 
