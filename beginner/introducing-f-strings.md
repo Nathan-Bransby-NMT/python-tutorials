@@ -90,7 +90,7 @@ You can add a colon and a format specifier in your curly braces to style numbers
 f-Strings provide an efficient and readable way to format strings in Python.
 Compared to older approaches like the modulo operator `%` or `.format()` method, f-strings make it much easier to embed variables and expressions inline and to control how your data appears.
 
-Throughout this tutorial, you learned not only how to use f-strings, by prefixing your string with an `f` and placing expressions inside curly braces, but also why they're the reccomended choice for modern Python code.
+Throughout this tutorial, you learned not only how to use f-strings, by prefixing your string with an `f` and placing expressions inside curly braces, but also why they're the recommended choice for modern Python code.
 With f-strings, your programs become easier to write and maintain, letting you focus more on what your code should do, rather than on tricky formatting details.
 
 You're now equipped to format strings effectively in Python, and to recognize when and why to use f-strings in your own projects.
