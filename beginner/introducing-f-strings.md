@@ -1,9 +1,9 @@
 <!-- 
 Document Analysis
 --- [https://wordcounter.net/]
-  - Word-Count: 640 
-  - Char-Count: 3,793
-  - Time-to-Read: 2 min 20 sec
+  - Word-Count: 634 
+  - Char-Count: 3,766
+  - Time-to-Read: 2 min 19 sec
 -->
 
 # An Introduction to f-Strings: Modern Interpolation and Formatting in Python
