@@ -9,13 +9,13 @@ Document Analysis
 # An Introduction to f-Strings: Modern Interpolation and Formatting in Python
 By the end of this tutorial, you'll understand how to use f-strings in Python to format text and interpolate variables.
 
-Formatting strings and [string interpolation](https://en.wikipedia.org/wiki/String_interpolation) lets you combine text with variables and expressions, which is perfect for communicating useful information in your programs.
-While there are many ways to format strings, the intergration of [PEP-498](https://peps.python.org/pep-0498/) in Python 3.6, introduced formatted strings, more commonly known as f-strings, made it clearer and easier than any prior method.
+Formatting strings and [string interpolation](https://en.wikipedia.org/wiki/String_interpolation) let you combine text with variables and expressions, which is perfect for communicating useful information in your programs.
+While there are many ways to format strings, the integration of [PEP-498](https://peps.python.org/pep-0498/) in Python 3.6 introduced formatted strings, more commonly known as f-strings, making it clearer and easier than any prior method.
 
 ## Before f-Strings
 
 - ### The Modulo Operator `%`
-  Python strings have a built-in operator that allows them to be formatted using the Modulo Operator `%` followed by a character used to specify the data type.
+  Python strings have a built-in format operator, the Modulo Operator `%`, followed by a character that specifies the data type.
 
   ```Python
   name = "Jane"
@@ -25,8 +25,8 @@ While there are many ways to format strings, the intergration of [PEP-498](https
   # 'Hello, Jane. You are 28 years old.'
   ```
 
-  Here, `%s` and `%d` act as placeholders for a string and integer.
-  While this method works, the syntax can be confusing, and requires you to know what the data type returned will be.
+  Here, `%s` and `%d` act as placeholders for a string and an integer.
+  While this method works, the syntax can be confusing, and requires you to know the exact data type of the variable.
 
 - ### The `str.format()` Method
   Another approach is the built-in `.format()` method in Python strings.
@@ -39,10 +39,10 @@ While there are many ways to format strings, the intergration of [PEP-498](https
   # 'Hello, Jane. You are 28 years old.'
   ```
 
-  This method replaces the values in `{}` with variables placed in order.
-  Although `.format()` improves readability, it's important to note that placeholders and variables must match with the correct position used.
+  This method replaces the values in `{}` with variables in their given order.
+  Although `.format()` improves readability, it's important to note that placeholders and variables must follow in their specific order.
 
-  Using the example above but swapping variables or placeholders around would return incorrectly.
+  Using the example above, but swapping variables or placeholders around would return incorrectly.
 
 ## String Interpolation With f-Strings
 
@@ -62,7 +62,7 @@ While there are many ways to format strings, the intergration of [PEP-498](https
   This small change dramatically improves the code readability while requiring less work than other methods.
   
 - ### Embedding Expressions With f-Strings
-  You're not just limited to using variables in f-strings, any expression works inside curly braces.
+  You're not just limited to using variables in f-strings; any expression works inside curly braces.
   
   ```Python
   apples = 3
@@ -72,23 +72,23 @@ While there are many ways to format strings, the intergration of [PEP-498](https
   # 'You have a total of 8 pieces of fruit.'
   ```
   
-  Here you can see that f-strings can also be used to embed evaluated expressions in Python strings.
+  Here you can see that f-strings can also be used to embed evaluated expressions inside strings.
   This is handy for calculating and formatting expressions on the fly.
   
 - ### Formatting With f-Strings
   f-Strings also allow you to control how variables and expressions are displayed using format codes.
   This is useful for numbers with many decimals, or aligning output text.
   
-  A practical use-case for this is correctly formatting currency.
+  A practical use case for this is correctly formatting currency.
   
   ```Python
   price_per_apple = 0.2
   
-  print(f"The price of apples are ${price_per_apple:.2f} each.")
-  # 'The price of apples are $0.20 each.'
+  print(f"The price of apples is ${price_per_apple:.2f} each.")
+  # 'The price of apples is $0.20 each.'
   ```
   
-  Here, `:.2f` tells Python to show two digits after the decimal.
+  Here, `:.2f` tells Python to display 2 digits after the decimal point.
   You can add a colon and a format specifier in your curly braces to style numbers, dates, and more.
   
 ## Conclusion
