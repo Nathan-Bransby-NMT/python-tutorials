@@ -3,7 +3,7 @@
 ## Introduction
 By the end of this tutorial, you'll understand how to use f-strings in Python to format text and interpolate variables.
 
-Formatting strings and [string interpolation](https://en.wikipedia.org/wiki/String_interpolation) lets you combine text with variables and expressions, which is perfect for comunicating useful information in your programs.
+Formatting strings and [string interpolation](https://en.wikipedia.org/wiki/String_interpolation) lets you combine text with variables and expressions, which is perfect for communicating useful information in your programs.
 While there are many ways to format strings in Python, in Python 3.6 with [PEP-498](https://peps.python.org/pep-0498/), the introduction of formatted strings, more commonly known as f-strings, made it clearer and easier than existing methods.
 
 ## Prior to f-Strings
@@ -37,7 +37,7 @@ print("Hello, {0}. You are {1} years old.".format(name, age))
 This method replaces the values in `{}` with variables placed in order.
 Although `.format()` improves readability, it's important to note that placeholders and variables must match with the correct position used.
 
-Using the example above but swapping variables or placeholders arround would return incorrectly.
+Using the example above but swapping variables or placeholders around would return incorrectly.
 
 ## String Interpolation With f-Strings
 
